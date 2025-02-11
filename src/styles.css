@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+:root {
+  --lamatco-color: #9d0000; /* Color de la empresa */
+  --navbar-bg-color: #3b3b3b; /* Color de fondo del navbar */
+}
+
+.lamatco-color {
+  color: var(--lamatco-color);
+}
+
+.lamatco-bg-color {
+  background-color: var(--lamatco-color);
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color);
+}
+
+.navbar-contact {
+  @apply inline-flex items-center bg-[#3b3b3b] border rounded py-1 px-3 text-base;
+}
+
+.navbar-contact:hover {
+  @apply bg-[#8d0000];
+}
