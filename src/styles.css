@@ -1,9 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
 :root {
-  --lamatco-color: #9d0000; /* Color de la empresa */
-  --navbar-bg-color: #3b3b3b; /* Color de fondo del navbar */
+  --lamatco-color: #9d0000;
+  --navbar-bg-color: #3b3b3b;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .lamatco-color {
@@ -24,4 +27,15 @@
 
 .navbar-contact:hover {
   @apply bg-[#8d0000];
+}
+
+.button-carousel {
+  @apply bg-[#00000067] text-white;
+}
+.button-carousel:hover {
+  @apply bg-[#000000] text-white;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
